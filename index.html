@@ -12,38 +12,38 @@
 </head>
 <body>
   <div class="card">
-    <h5 class="card-header">Shorten your URLs!</h5>
+    <h5 class="card-header">缩短你的网址!</h5> 
     <div class="card-body">
-      <h5 class="card-title"> </h5>
+      <h5 class="card-title"> </h5> 
 
       <div class="input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1">Long URL</span>
+          <span class="input-group-text" id="basic-addon1">长URL</span> 
         </div>
         <input type="text" class="form-control" id="longURL" aria-describedby="basic-addon1" placeholder="Example: https://example.com/" oninput="loadUrlList()">
       </div>
 
       <div class="input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon2">Custom Short URL</span>
+          <span class="input-group-text" id="basic-addon2">自定义短URL</span> 
         </div>
         <input type="text" class="form-control" id="keyPhrase" aria-describedby="basic-addon2" placeholder="As you wish">
       </div>     
 
       <div class="input-group mb-3">
-        <button class="btn btn-primary" type="button" onclick='shorturl()' id="addBtn">Shorten it</button>
+        <button class="btn btn-primary" type="button" onclick='shorturl()' id="addBtn">开始缩短</button> 
       </div>
 
       <div class="input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon3">password</span>
+          <span class="input-group-text" id="basic-addon3">密码</span> 
         </div>
         <input class="form-control" type="text" value="__PASSWORD__" readonly="true" id="passwordText" aria-describedby="basic-addon3">
       </div>
 
       <div class="input-group mb-3">
-        <button class="btn btn-info" type="button" onclick='loadUrlList()' id="loadListBtn">load localStorage</button>
-        <button class="btn btn-danger" type="button" onclick='clearLocalStorage()' id="clearlocalStgBtn">clear localStorage</button>
+        <button class="btn btn-info" type="button" onclick='loadUrlList()' id="loadListBtn">加载本地存储</button> 
+        <button class="btn btn-danger" type="button" onclick='clearLocalStorage()' id="clearlocalStgBtn">清理本地存储</button> 
       </div>
 
       <div class="card-text">
@@ -56,32 +56,29 @@
           </div>
           <div class="list-group-item">
             <button type="button" class="btn btn-danger" onclick='deleteShortUrl("8NKY34")'>X</button>
-            <button type="button" class="btn btn-info" onclick='queryVisitCount("8NKY34")'>?</button>
+            <button type="button" class="btn btn-info" onclick='queryVisitCount("8NKY34")'>?</button> 
             <span>somesomesomesomesomesomesomesome</span>
-            <span>texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</span>
+            <span>texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</span> 
           </div>
         </div>
       </div>            
     </div>
     
-    <div class="card-footer">
-      <span> <a href="https://github.com/crazypeace/Url-Shorten-Worker/" target="_self">Fork me on GitHub</a> </span>
-    </div>
+  
   </div>
 
-  <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
+  <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true"> 
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="resultModalLabel">Result</h5>
+          <h5 class="modal-title" id="resultModalLabel">结果</h5> 
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body" id="result">No result</div>
+        <div class="modal-body" id="result">没有结果</div> 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" onclick='copyurl("result")' data-toggle="popover" data-placement="bottom" data-content="Copied!">Copy</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>    
+          <button type="button" class="btn btn-primary" onclick='copyurl("result")' data-toggle="popover" data-placement="bottom" data-content="Copied!">复制
         </div>
       </div>
     </div>
